@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    th{
+        @apply bg-theme-dark text-white py-2
+    }
+
+    th:first-child{
+        @apply rounded-tl-lg pl-5
+    }
+
+    th:last-child{
+        @apply rounded-tr-lg
+    }
+
+    td:first-child{
+        @apply pl-5
+    }
+
+    td{
+        @apply py-2
+    }
+
+    tr{
+        @apply hover:bg-gray-100 even:bg-gray-50
+    }
+}
+
+@layer components {
+    .btn-green{
+        @apply inline-flex items-center px-4 py-2 bg-theme-secondary border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-teal-600 active:bg-teal-800 focus:outline-none focus:border-teal-800 focus:ring focus:ring-teal-200 disabled:opacity-25 transition
+    }
+}
