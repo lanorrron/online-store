@@ -26,3 +26,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get('/colors', \App\Http\Livewire\Colors\ColorList::class)->name('colors');
