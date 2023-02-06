@@ -28,3 +28,4 @@ Route::middleware([
 });
 
 Route::get('/colors', \App\Http\Livewire\Colors\ColorList::class)->name('colors');
+Route::get('/categories',\App\Http\Livewire\Category\CategoryList::class)->name('categories');
