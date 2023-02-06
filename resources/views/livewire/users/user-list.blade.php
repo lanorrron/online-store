@@ -12,6 +12,7 @@
                         <tr>
                             <th>{{'ID'}}</th>
                             <th>{{'Nombre'}}</th>
+                            <th>{{'Email'}}</th>
                             <th>{{'Acciones'}}</th>
                         </tr>
                         </thead>
@@ -20,6 +21,7 @@
                             <tr>
                                 <td>{{$user->id}}</td>
                                 <td>{{$user->name}}</td>
+                                <td>{{$user->email}}</td>
                                 <td class="flex gap-5">
                                     <x-edit-button></x-edit-button>
                                     <x-delete-button></x-delete-button>
